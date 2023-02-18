@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Junpak, the Great</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="card-group mb-3">
+            <div class="card">
+                <div class="card-header">
+                    이름
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">준팍</h5>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    거주지
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title"><a style="text-decoration: none; color: black;" target='_blank'
+                            href="https://map.naver.com/v5/search/%EB%93%B1%EC%B4%8C%EC%97%AD?c=15,0,0,0,dh">강서구 등촌동</a>
+                    </h5>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    한마디
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title"> 월클 개발자가 되기 위해 노력 중!</h5>
+                </div>
+            </div>
+        </div>
+        <div id="table" class="table-responsive mb-3">
+            <h3>인생 영화 BEST 8</h3>
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th onclick="sortTable(0)" style="cursor: pointer;" width="5%">순위</th>
+                        <th width="20%">제목</th>
+                        <th width="20%">포스터</th>
+                        <th width="45%">줄거리</th>
+                        <th width="10%">바로가기</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="align-middle">1</td>
+                        <td class="align-middle">Iron Man</td>
+                        <td class="align-middle"><img src="/images/아이언맨.jpeg" width="180px"></td>
+                        <td class="align-middle">
+                            <h5>하이테크 슈퍼 히어로의 탄생 | 이제 업그레이드는 끝났다</h5>
+                            <p>
+                                천재적인 두뇌와 재능으로 세계 최강의 무기업체를 이끄는 CEO이자, 타고난 매력으로 셀러브리티 못지않은 화려한 삶을 살아가던 억만장자 토니 스타크.
+                                아프가니스탄에서 자신이 개발한 신무기 발표를 성공리에 마치고 돌아가던 그는 게릴라군의 갑작스런 공격에 의해 가슴에 치명적인 부상을 입고 게릴라군에게 납치된다.
+                                가까스로 목숨을 건진 그에게 게릴라군은 자신들을 위한 강력한 무기를 개발하라며 그를 위협한다. 그러나 그는 게릴라군을 위한 무기 대신, 탈출을 위한 무기가
+                                장착된 철갑수트를 몰래 만드는 데 성공하고, 그의 첫 수트인 ‘Mark1’를 입고 탈출에 성공한다.
+                            </p>
+                        </td>
+                        <td class="align-middle"><a class="btn btn-outline-primary" target='_blank'
+                                href="https://movie.naver.com/movie/bi/mi/basic.naver?code=44885">바로가기</a></td>
+                    </tr>
+                    <tr>
+                        <td class="align-middle">2</td>
+                        <td class="align-middle">Frozen 2</td>
+                        <td class="align-middle"><img src="/images/겨울왕국2.jpeg" width="180px"></td>
+                        <td class="align-middle">
+                            <h5>내 마법의 힘은 어디서 왔을까?<br>
+                                나를 부르는 저 목소리는 누구지?</h5>
+                            <p>
+                                어느 날 부턴가 의문의 목소리가 엘사를 부르고, 평화로운 아렌델 왕국을 위협한다.
+                                트롤은 모든 것은 과거에서 시작되었음을 알려주며 엘사의 힘의 비밀과 진실을 찾아 떠나야한다고 조언한다.
+                            </p>
+                        </td>
+                        <td class="align-middle"><a class="btn btn-outline-primary" target='_blank'
+                                href="https://movie.naver.com/movie/bi/mi/basic.naver?code=136873">바로가기</a></td>
+                    </tr>
+                    <tr>
+                        <td class="align-middle">3</td>
+                        <td class="align-middle">Batman Begins</td>
+                        <td class="align-middle"><img src="/images/배트맨 비긴즈.jpeg" width="180px"></td>
+                        <td class="align-middle">
+                            <h5>아무 것도 상상하지 마라! 올여름, 새로운 영웅의 선.전.포.고</h5>
+                            <p>
+                                브루스 웨인(크리스찬 베일)은 어린 시절, 부모님이 길거리에서 피살되는 것을 눈 앞에서 지켜본 후 죄의식과 분노로 늘 고통 받는다. 복수하고 싶은 욕망은
+                                불타오르지만 명예를 지켜야 한다던 부모님의 가르침 사이에서 갈등하던 그는 악을 물리칠 방법을 터득하기 위해 고담시를 떠나 홀로 세상을 유랑한다.
+                            </p>
+                        </td>
+                        <td class="align-middle"><a class="btn btn-outline-primary" target='_blank'
+                                href="https://movie.naver.com/movie/bi/mi/basic.naver?code=37439">바로가기</a></td>
+                    </tr>
+                    <tr>
+                        <td class="align-middle">4</td>
+                        <td class="align-middle">La La Land</td>
+                        <td class="align-middle"><img src="/images/라라랜드.jpeg" width="180px"></td>
+                        <td class="align-middle">
+                            <h5>황홀한 사랑, 순수한 희망, 격렬한 열정… <br>
+                                이 곳에서 모든 감정이 폭발한다!</h5>
+                            <p>
+                                꿈을 꾸는 사람들을 위한 별들의 도시 ‘라라랜드’.
+                                재즈 피아니스트 ‘세바스찬’(라이언 고슬링)과 배우 지망생 ‘미아’(엠마 스톤),
+                                인생에서 가장 빛나는 순간 만난 두 사람은
+                                미완성인 서로의 무대를 만들어가기 시작한다.
+                            </p>
+                        </td>
+                        <td class="align-middle"><a class="btn btn-outline-primary" target='_blank'
+                                href="https://movie.naver.com/movie/bi/mi/basic.naver?code=134963">바로가기</a></td>
+                    </tr>
+                    <tr>
+                        <td class="align-middle">5</td>
+                        <td class="align-middle">Leon</td>
+                        <td class="align-middle"><img src="/images/레옹.jpeg" width="180px"></td>
+                        <td class="align-middle">
+                            <h5>“나도 행복해 지고 싶어. 잠도 자고, 뿌리도 내릴 꺼야.”_레옹</h5>
+                            <p>
+                                한 손엔 우유 2팩이 든 가방, 다른 한 손엔 화분을 들고 뿌리 없이 떠도는 킬러 레옹은
+                                어느 날 옆집 소녀 마틸다의 일가족이 몰살 당하는 것을 목격한다.
+                                그 사이 심부름을 갔다 돌아 온 마틸다는 가족들이 처참히 몰살 당하자 레옹에게 도움을 청한다.
+                            </p>
+                        </td>
+                        <td class="align-middle"><a class="btn btn-outline-primary" target='_blank'
+                                href="https://movie.naver.com/movie/bi/mi/basic.naver?code=17170">바로가기</a></td>
+                    </tr>
+                    <tr>
+                        <td class="align-middle">6</td>
+                        <td class="align-middle">Begin Again</td>
+                        <td class="align-middle"><img src="/images/비긴 어게인.jpeg" width="180px"></td>
+                        <td class="align-middle">
+                            <h5>“다시 시작해, 너를 빛나게 할 노래를!”</h5>
+                            <p>
+                                싱어송라이터인 ‘그레타’(키이라 나이틀리)는 남자친구 ‘데이브’(애덤 리바인)가 메이저 음반회사와 계약을 하게 되면서 뉴욕으로 오게 된다. 그러나 행복도
+                                잠시, 오랜 연인이자 음악적 파트너로서 함께 노래를 만들고 부르는 것이 좋았던 그레타와 달리 스타가 된 데이브의 마음은 어느새 변해버린다.
+                                스타 음반프로듀서였지만 이제는 해고된 ‘댄’(마크 러팔로)은 미치기 일보직전 들른 뮤직바에서 그레타의 자작곡을 듣게 되고 아직 녹슬지 않은 촉을 살려
+                                음반제작을 제안한다. 거리 밴드를 결성한 그들은 뉴욕의 거리를 스튜디오 삼아 진짜로 부르고 싶었던 노래를 만들어가는데…
+                            </p>
+                        </td>
+                        <td class="align-middle"><a class="btn btn-outline-primary" target='_blank'
+                                href="https://movie.naver.com/movie/bi/mi/basic.naver?code=96379">바로가기</a></td>
+                    </tr>
+                    <tr>
+                        <td class="align-middle">7</td>
+                        <td class="align-middle">Harry Potter And The Sorcerer's Stone</td>
+                        <td class="align-middle"><img src="/images/해리포터와 마법사의 돌.jpeg" width="180px"></td>
+                        <td class="align-middle">
+                            <p>
+                                해리 포터(다니엘 래드클리프 분)는 위압적인 버논 숙부(리챠드 그리피스 분)와 냉담한 이모 페투니아 (피오나 쇼 분), 욕심 많고 버릇없는 사촌 더즐리(해리
+                                멜링 분) 밑에서 갖은 구박을 견디며 계단 밑 벽장에서 생활한다. 이모네 식구들 역시 해리와의 동거가 불편하기는 마찬가지. 이모 페투니아에겐 해리가
+                                이상한(?) 언니 부부에 관한 기억을 떠올리게 만드는 달갑지 않은 존재다. 11살 생일이 며칠 앞으로 다가왔지만 한번도 생일파티를 치르거나 제대로 된
+                                생일선물을 받아 본 적이 없는 해리로서는 특별히 신날 것도 기대 할 것도 없다. 11살 생일을 며칠 앞둔 어느 날 해리에게 초록색 잉크로 쓰여진 한 통의
+                                편지가 배달된다. 그 편지의 내용은 다름 아닌 해리의 11살 생일을 맞이하여 전설적인“호그와트 마법학교”에서 보낸 입학초대장이었다. 그리고 해리의 생일을
+                                축하하러 온 거인 해그리드는 해리가 모르고 있었던 해리의 진정한 정체를 알려주는데. 그것은 바로 해리가 굉장한 능력을 지닌 마법사라는 것!
+                            </p>
+                        </td>
+                        <td class="align-middle"><a class="btn btn-outline-primary" target='_blank'
+                                href="https://movie.naver.com/movie/bi/mi/basic.naver?code=30688">바로가기</a></td>
+                    </tr>
+                    <tr>
+                        <td class="align-middle">8</td>
+                        <td class="align-middle">Eternal Sunshine Of The Spotless Mind</td>
+                        <td class="align-middle"><img src="/images/이터널 선샤인.jpeg" width="180px"></td>
+                        <td class="align-middle">
+                            <h5>사랑은 그렇게 다시 기억된다..</h5>
+                            <p>조엘은 아픈 기억만을 지워준다는 라쿠나사를 찾아가 헤어진 연인 클레멘타인의 기억을 지우기로 결심한다. 기억이 사라져 갈수록 조엘은 사랑이 시작되던 순간, 행복한
+                                기억들, 가슴 속에 각인된 추억들을 지우기 싫어지기만 하는데... 당신을 지우면 이 아픔도 사라질까요? 사랑은 그렇게 다시 기억된다.</p>
+                        </td>
+                        <td class="align-middle"><a class="btn btn-outline-primary" target='_blank'
+                                href="https://movie.naver.com/movie/bi/mi/basic.naver?code=38444">바로가기</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="row">
+            <div class="col-md-6" style="margin: auto;">
+                <h3 style="text-align: center;">방명록</h3>
+                <div class="mb-3">
+                    <input type="text" class="form-control" id="name" placeholder="이름을 입력해주세요.">
+                </div>
+                <div class="mb-2">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" name="movie" type="checkbox" id="inlineRadio1" value="option1">
+                        <label class="form-check-label" for="inlineRadio1">Iron Man</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" name="movie" type="checkbox" id="inlineRadio2" value="option2">
+                        <label class="form-check-label" for="inlineRadio2">Frozen 2</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" name="movie" type="checkbox" id="inlineRadio3" value="option3">
+                        <label class="form-check-label" for="inlineRadio3">Batman Begins</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" name="movie" type="checkbox" id="inlineRadio4" value="option1">
+                        <label class="form-check-label" for="inlineRadio4">La La Land</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" name="movie" type="checkbox" id="inlineRadio5" value="option2">
+                        <label class="form-check-label" for="inlineRadio5">Leon</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" name="movie" type="checkbox" id="inlineRadio6" value="option3">
+                        <label class="form-check-label" for="inlineRadio6">Begin Again</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" name="movie" type="checkbox" id="inlineRadio7" value="option2">
+                        <label class="form-check-label" for="inlineRadio7">Harry Potter And The Sorcerer's Stone</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" name="movie" type="checkbox" id="inlineRadio8" value="option3">
+                        <label class="form-check-label" for="inlineRadio8">Eternal Sunshine Of The Spotless Mind</label>
+                    </div>
+                </div>
+
+                <div style="text-align: center;">
+                    <button style="width: 49.5%;" class="btn btn-primary" type="button" >등록</button>
+                    <button style="width: 49.5%;" class="btn btn-primary" type="reset">취소</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="/js/background.js"></script>
+    <script src="/js/table.js"></script>
+    <script src="/js/form.js"></script>
+</body>
+
+</html>
